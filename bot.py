@@ -1,5 +1,10 @@
 import discord
-
+import logging
+logger = logging.getLogger('discord')
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+logger.addHandler(handler)
 
 from discord.ext import commands
 
@@ -17,4 +22,7 @@ async def on_member_join(member):
 async def on_member_remove(member):
     print(f'{member} left the server.')
 
-client.run('Njc2ODgwMDM5ODQ1MDM2MDk4.XkMHsw.Td-gHZ09KUCLq7XGakdD3gYG8-k')
+@client.event
+async def
+
+client.run('yeet')
