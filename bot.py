@@ -21,7 +21,9 @@ async def on_member_join(member):
 async def on_member_remove(member):
     print(f'{member} left the server.')
 
-@client.event
-async def
+@client.command
+async def test(cntx):
+    print(cntx)
 
-client.run('yeet')
+
+client.run('Njc2ODgwMDM5ODQ1MDM2MDk4.XkRIyw.xrNN-tg2Z0aKcyTymRjWX8Ef_aE')
